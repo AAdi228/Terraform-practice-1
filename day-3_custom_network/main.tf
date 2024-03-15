@@ -18,7 +18,7 @@ resource "aws_eip" "adi" {
   
 }
 resource "aws_nat_gateway" "nat" {
-    subnet_id = aws_subnet.private.id
+    subnet_id = aws_subnet.adi.id
     allocation_id = aws_eip.adi.id
     tags = {
       Name = "nat"
