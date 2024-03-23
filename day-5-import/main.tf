@@ -7,3 +7,6 @@ resource "aws_instance" "aadi" {
     instance_type = t2.micro 
   
 }
+
+#import command
+# terraform import aws_instance.example instanceid

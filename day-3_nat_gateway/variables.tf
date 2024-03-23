@@ -1,18 +1,23 @@
 variable "ami_id" {
     description = "passing ami value to main.tf"
     type = string
-    default = "ami-05295b6e6c790593e"
-  
+    default = ""
 }
 variable "instance_type" {
     description = "passing value to main.tf"
     type = string
-    default = "t2.micro"
+    default = ""
   
 }
 variable "key_name" {
     description = "passing value to main.tf"
     type = string
-    default = "ggt"
+    default = ""
+  
+}
+variable "subnet_id" {
+    description = "passing value to main.tf"
+    type = string
+    default = ""
   
 }
