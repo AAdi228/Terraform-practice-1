@@ -1,4 +1,4 @@
-#! /bin/bash #shibang line
+! /bin/sh #shebangline
 sudo yum update -y
 sudo yum install -y httpd
 sudo service httpd start  
