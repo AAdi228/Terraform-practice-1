@@ -50,5 +50,5 @@ resource "aws_iam_instance_profile" "example_profile" {
 resource "aws_instance" "example_instance" {
   instance_type        = var.ec2_instance_type
   ami                  = var.image_id
-  iam_instance_profile = aws_iam_instance_profile.example_profile.name
+  iam_instance_profile = aws_iam_instance_profile.example_profile.name # attaching to role
 }

@@ -1,0 +1,14 @@
+node {
+    stage('checkout') { 
+        git branch: 'main', url: 'https://github.com/AAdi228/terraform.git'
+    }
+    stage('init') {
+        sh "terraform init -reconfigure"
+           }
+           stage('plan') {
+        sh "terraform plan"
+           }
+    stage('action') {
+        sh "terraform ${action} --auto-approve"
+        }
+}
